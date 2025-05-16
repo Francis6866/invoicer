@@ -1,17 +1,26 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import TestimonialText from './TestimonialText'
 import TestimonialCard from './TestimonialCard'
 import chioma from '../assets/images/test-chioma.jpg'
 import musa from '../assets/images/test-musa.jpg'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 
 const TestimonialSec = () => {
+
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
+
   return (
     <div className='py-[120px] max-md:px-5 lg:pl-[135px] bg-[#F6F6F6]'>
-      <div className='flex gap-[72px] flex-col lg:flex-row items-center justify-center'>
+      <div className='flex gap-[72px] flex-col lg:flex-row items-center justify-center' data-aos="fade-down-left" data-aos-duration="2000">
         <TestimonialText />
 
         {/* testimonial cards */}
-        <div className='flex flex-col lg:flex-row justify-center items-center gap-5 '>
+        <div className='flex flex-col lg:flex-row justify-center items-center gap-5'>
             <TestimonialCard 
                 text="Before Invoicer, I used to forget what I sold by evening. Now, everything is recorded — even my staff use it with ease. It's like having a full-time manager in my pocket"
                 name="Chioma Eze"

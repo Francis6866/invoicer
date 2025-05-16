@@ -4,7 +4,9 @@ import saleRecord from '../assets/images/sale-record.png'
 import management from '../assets/images/management.png'
 import report from '../assets/images/reports.png'
 
+
 const FeaturesCard = () => {
+
 
   return (
     <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-y-5 gap-x-7 justify-center'>

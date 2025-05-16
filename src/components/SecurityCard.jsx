@@ -1,14 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import securityBckImg from '../assets/images/securityBackgroundImg.png'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const SecurityCard = () => {
+
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
+
   return (
     <div
       className='max-w-[1170px] mx-auto rounded-[16px] py-10 px-6 bg-[#F6F6F6] space-y-12 overflow-hidden'
       style={{ backgroundImage: `url(${securityBckImg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+      data-aos="zoom-in-up"  data-aos-duration="3000"
     >
        <div id='row1' className='space-y-10 lg:flex justify-between'>
-          <div className='w-[348px] px-6 space-y-6'>
+          <div className='lg:w-[348px] px-6 space-y-6'>
             {/* bullet */}
             <div className='w-7 h-7 rounded-[14px] p-2 bg-[#ECF0FB]'>
               <div className='w-2.5 h-2.5 rounded-full bg-[#2E68FD]'></div>
@@ -20,7 +29,7 @@ const SecurityCard = () => {
             </div>
           </div>{/* 1 */}
 
-          <div className='w-[348px] px-6 space-y-6'>
+          <div className='lg:w-[348px] px-6 space-y-6'>
             {/* bullet */}
             <div className='w-7 h-7 rounded-[14px] p-2 bg-[#ECF0FB]'>
               <div className='w-2.5 h-2.5 rounded-full bg-[#FC4343]'></div>
@@ -32,7 +41,7 @@ const SecurityCard = () => {
             </div>
           </div>{/* 2 */}
 
-          <div className='w-[348px] px-6 space-y-6'>
+          <div className='lg:w-[348px] px-6 space-y-6'>
             {/* bullet */}
             <div className='w-7 h-7 rounded-[14px] p-2 bg-[#ECF0FB]'>
               <div className='w-2.5 h-2.5 rounded-full bg-[#08A965]'></div>
@@ -46,7 +55,7 @@ const SecurityCard = () => {
        </div>
 
        <div id='row2' className='space-y-10 lg:flex justify-between'>
-          <div className='w-[348px] px-6 space-y-6'>
+          <div className='lg:w-[348px] px-6 space-y-6'>
             {/* bullet */}
             <div className='w-7 h-7 rounded-[14px] p-2 bg-[#ECF0FB]'>
               <div className='w-2.5 h-2.5 rounded-full bg-[#3B7793]'></div>
@@ -58,7 +67,7 @@ const SecurityCard = () => {
             </div>
           </div>{/* 1 */}
 
-          <div className='w-[348px] px-6 space-y-6'>
+          <div className='lg:w-[348px] px-6 space-y-6'>
             {/* bullet */}
             <div className='w-7 h-7 rounded-[14px] p-2 bg-[#ECF0FB]'>
               <div className='w-2.5 h-2.5 rounded-full bg-[#D77E1B]'></div>
@@ -70,7 +79,7 @@ const SecurityCard = () => {
             </div>
           </div>{/* 2 */}
 
-          <div className='w-[348px] px-6 space-y-6'>
+          <div className='lg:w-[348px] px-6 space-y-6'>
             {/* bullet */}
             <div className='w-7 h-7 rounded-[14px] p-2 bg-[#ECF0FB]'>
               <div className='w-2.5 h-2.5 rounded-full bg-[#932EFA]'></div>

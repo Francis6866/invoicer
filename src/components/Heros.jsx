@@ -1,21 +1,30 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import img1 from '../assets/images/img1.png'
 import line from '../assets/images/line.png'
 import apple from '../assets/images/Apple.png'
 import playstore from '../assets/images/Playstore.png'
-import { AiOutlineApple } from "react-icons/ai";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 
 const Heros = () => {
+
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
+
+
+
   return (
-    <div className='bg-[#163300] max-md:space-y-8 md:flex md:flex-row-reverse md:items-center pt-6'>
+    <div className='bg-[#33000011] max-md:space-y-8 md:flex md:flex-row-reverse md:items-center pt-6'>
         {/*image div */}
-        <div className='md:w-[40%]'>
+        <div className='lg:w-[40%]' data-aos="fade-down" data-aos-duration="1500">
             <img src={img1}  alt="Image of a happy customer" className='object-cover w-full' />
         </div>
 
         {/* write up */}
-        <div className='space-y-8 max-md:px-4'>
+        <div className='lg:w-[50%] space-y-8 max-md:px-4' data-aos="fade-up" data-aos-duration="1500">
           <div className='space-y-2'>
             <div className='text-[16px] text-[#9FE870] font-[600] font-outfit'>
               <h4>Trusted by over 2,000 retailers and shop owners</h4>

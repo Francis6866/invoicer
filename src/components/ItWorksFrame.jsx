@@ -1,12 +1,20 @@
-import React from 'react'
+import React, { useEffect }  from 'react'
 import frame1 from '../assets/images/frame1.png'
 import frame2 from '../assets/images/frame2.png'
 import frame3 from '../assets/images/frame3.png'
 import plus from '../assets/images/plus-square.png'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const ItWorksFrame = () => {
+
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
+
   return (
-    <div className='max-w-[1170px] mx-auto rounded-2xl flex flex-col items-center lg:flex-row justify-between p-6 bg-white relative'>
+    <div className='max-w-[1170px] mx-auto rounded-2xl flex flex-col items-center lg:flex-row justify-between p-6 bg-white relative' data-aos="flip-up" data-aos-duration="2000">
         {/* plus-square */}
         <div className='w-6 h-6 absolute right-30 -top-3'>
             <img src={plus} className='w-full object-cover' />

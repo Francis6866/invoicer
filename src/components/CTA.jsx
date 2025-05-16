@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import cta from '../assets/images/cta.jpg'
 import apple from '../assets/images/Apple.png'
 import playstore from '../assets/images/Playstore.png'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const CTA = () => {
+
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
+
   return (
     <div className='bg-[#163300] max-md:px-5 py-30'>
         {/* remember px */}
-      <div className='max-w-[1170px] mx-auto rounded-[16px] overflow-hidden' style={{ backgroundImage: `url(${cta})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div className='max-w-[1170px] mx-auto rounded-[16px] overflow-hidden' style={{ backgroundImage: `url(${cta})`, backgroundSize: 'cover', backgroundPosition: 'center' }} data-aos="zoom-in-up"  data-aos-duration="3000">
         <div className='bg-[#0000009a] py-40 lg:px-[295px] space-y-10 flex flex-col items-center justify-center'>
             {/* text */}
             <div className='space-y-3  text-[#ffffff] text-center'>
