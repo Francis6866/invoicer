@@ -1,0 +1,53 @@
+import React from 'react'
+import logo from '../assets/images/logo.png'
+
+const Footer = () => {
+  return (
+    <div className='bg-[#163300] pb-8 max-md:px-5'>    
+      <div className='max-w-[1170px] mx-auto space-y-10'>
+        {/* text */}
+        <div className='flex flex-col max-md:space-y-5 lg:flex-row justify-between'>
+            {/* invoicer */}
+            <div className='w-[278px]'>
+                <div className='w-[123px]'>
+                    <img src={logo} alt="Company logo" className='w-full object-fit-cover'/>
+                </div>
+                <p className='font-outfit font-[400] text-[16px] text-[#E6E6E6] leading-[150%]'>
+                    Invoicer is a simple inventory and sales management app built for African small businesses.
+                </p>
+            </div>
+
+            {/* links */}
+            <div className='flex gap-25'>
+                <div className='space-y-4'>
+                    <h4 className='font-urbanist font-bold text-[20px] leading-[120%] text-white'>Short links</h4>
+                    <ul className='font-outfit font-[400] text-[16px] leading-[150%] text-[#E6E6E6] space-y-3'>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">How it works</a></li>
+                        <li><a href="">Testimonial</a></li>
+                    </ul>
+                </div>{/* 1 */}
+
+                <div className='space-y-4'>
+                    <h4 className='font-urbanist font-bold text-[20px] leading-[120%] text-white'>Other pages</h4>
+                    <ul className='font-outfit font-[400] text-[16px] leading-[150%] text-[#E6E6E6] space-y-3'>
+                        <li><a href="">Privacy policy</a></li>
+                        <li><a href="">Terms & conditions</a></li>
+                    </ul>
+                </div>{/* 2 */}
+            </div>
+        </div>
+
+        {/* rights */}
+        <div className='space-y-8'>
+            <hr className='text-[#E7E7E8]'/>
+            <p className='font-outfit font-[400] text-[16px] text-[#E6E6E6] leading-[150%] text-center'>
+            2025 &copy; Build with Harvoxx All rights reserved.
+            </p>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Footer
