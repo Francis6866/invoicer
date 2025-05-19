@@ -1,5 +1,8 @@
 import React from 'react'
 import logo from '../assets/images/logo.png'
+import { HashLink } from "react-router-hash-link"
+import { Link } from 'react-router-dom'
+
 
 const Footer = () => {
   return (
@@ -10,7 +13,9 @@ const Footer = () => {
             {/* invoicer */}
             <div className='w-[278px]'>
                 <div className='w-[123px]'>
-                    <img src={logo} alt="Company logo" className='w-full object-fit-cover'/>
+                    <Link to='/'>
+                        <img src={logo} alt="Company logo" className='w-full object-fit-cover'/>
+                    </Link>
                 </div>
                 <p className='font-outfit font-[400] text-[16px] text-[#E6E6E6] leading-[150%]'>
                     Invoicer is a simple inventory and sales management app built for African small businesses.
@@ -22,17 +27,17 @@ const Footer = () => {
                 <div className='space-y-4'>
                     <h4 className='font-urbanist font-bold text-[20px] leading-[120%] text-white'>Short links</h4>
                     <ul className='font-outfit font-[400] text-[16px] leading-[150%] text-[#E6E6E6] space-y-3'>
-                        <li><a href="">Features</a></li>
-                        <li><a href="">How it works</a></li>
-                        <li><a href="">Testimonial</a></li>
+                        <li><HashLink smooth to='#features'>Features</HashLink></li>
+                        <li><HashLink smooth to='#works'>How it works</HashLink></li>
+                        <li><HashLink smooth to='#testimonials'>Testimonial</HashLink></li>
                     </ul>
                 </div>{/* 1 */}
 
                 <div className='space-y-4'>
                     <h4 className='font-urbanist font-bold text-[20px] leading-[120%] text-white'>Other pages</h4>
                     <ul className='font-outfit font-[400] text-[16px] leading-[150%] text-[#E6E6E6] space-y-3'>
-                        <li><a href="">Privacy policy</a></li>
-                        <li><a href="">Terms & conditions</a></li>
+                        <li><HashLink smooth to=''>Privacy policy</HashLink></li>
+                        <li><HashLink smooth to=''>Terms & conditions</HashLink></li>
                     </ul>
                 </div>{/* 2 */}
             </div>

@@ -17,19 +17,19 @@ const Hompage = () => {
         <Heros />
       </section>
 
-      <section className='bg-[#163300]'>
+      <section className='bg-[#163300]' id='features'>
         <FeaturesSec />
       </section>
 
-      <section>
+      <section id='works'>
         <HowItWorks /> 
       </section>
 
-      <section>
+      <section id='security'>
         <Security />
       </section>
 
-      <section>
+      <section id='testimonials'>
         <TestimonialSec />
       </section>
 
