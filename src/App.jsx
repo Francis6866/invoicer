@@ -1,6 +1,3 @@
-
-import CTA from "./components/CTA"
-import Footer from "./components/Footer"
 import Hompage from "./pages/Hompage"
 
 

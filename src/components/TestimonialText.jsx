@@ -5,12 +5,12 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const TestimonialText = () => {
   return (
-    <div className='lg:w-[549px] space-y-10'>
+    <div className='space-y-10'>
         {/* text */}
       <div className='space-y-3'>
         <div>
             <h3 className='font-outfit font-[600] text-[16px] text-[#163300]'>TESTIMONIAL</h3>
-            <h4 className='font-urbanist font-bold text-[40px] text-[#01081B] leading-[120%]'>You Don't Have to Take <br /> Our Word for It</h4>
+            <h4 className='font-urbanist font-bold text-[40px] text-[#01081B] leading-[120%]'>You Don't Have to Take Our Word for It</h4>
         </div>
         <div>
             <p className='font-outfit font-[400] text-[16px] text-[#4D525F]'>
@@ -20,7 +20,7 @@ const TestimonialText = () => {
       </div>
 
       {/* arrows */}
-      <div className='hidden lg:flex gap-3'>
+      <div className='hidden gap-3'>
         {/* 1 */}
         <div className='w-14 h-14 rounded-full border-[0.3px] p-4 bg-[#CFD0D1] flex justify-center items-center'>
             <button>

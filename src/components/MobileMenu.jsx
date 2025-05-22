@@ -1,6 +1,7 @@
 import React from 'react'
+import { HashLink } from "react-router-hash-link"
 
-const MobileMenu = () => {
+const MobileMenu = ({handleToggleMenu}) => {
   return (
     <>
       {/* mobile menu */}
@@ -11,10 +12,9 @@ const MobileMenu = () => {
           <div className='max-md:py-6'>
             <nav>
               <ul className='text-white text-center space-y-10'>
-                <li><a href="">Features</a></li>
-                <li><a href="">Pricing</a></li>
-                <li><a href="">Security</a></li>
-                <li><a href="">Benefits</a></li>
+                <li onClick={handleToggleMenu}><HashLink smooth to='#features'>Features</HashLink></li>
+                <li onClick={handleToggleMenu}><HashLink smooth to='#works'>How it works</HashLink></li>
+                <li onClick={handleToggleMenu}><HashLink smooth to='#benefits'>Benefits</HashLink></li>
               </ul>
             </nav>
           </div>

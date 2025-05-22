@@ -39,7 +39,7 @@ const Header = () => {
 
       {
         show && 
-        <MobileMenu />
+        <MobileMenu handleToggleMenu={handleToggleMenu}/>
       }
     </header>
   )

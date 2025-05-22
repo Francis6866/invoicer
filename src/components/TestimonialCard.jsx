@@ -10,7 +10,7 @@ const TestimonialCard = ({
 }) => {
 
   return (
-    <div className='lg:w-[419px] rounded-2xl py-8 px-6 space-y-8 bg-[#ffffff]'>
+    <div className='lg:w-[390px] rounded-2xl py-8 px-6 space-y-8 bg-[#ffffff]'>
         {/* text and rating */}
       <div className='space-y-4'>
         <div className='flex'>

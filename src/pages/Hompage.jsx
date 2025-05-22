@@ -25,7 +25,7 @@ const Hompage = () => {
         <HowItWorks /> 
       </section>
 
-      <section id='security'>
+      <section id='benefits'>
         <Security />
       </section>
 
