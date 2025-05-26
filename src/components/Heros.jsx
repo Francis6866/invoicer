@@ -18,7 +18,7 @@ const Heros = () => {
 
 
   return (
-    <div className='bg-[#33000011] max-md:space-y-8 md:flex md:flex-row-reverse md:items-center pt-6'>
+    <div className='bg-[#163300] max-w-[1170px] mx-auto max-md:space-y-8 md:flex md:flex-row-reverse md:items-center md:justify-between pt-6'>
         {/*image div */}
         <div className='lg:w-[40%]' data-aos="fade-down" data-aos-duration="1500">
             <img src={img11}  alt="Image of a happy customer" className='object-cover w-full' />

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import Brand from './Brand'
 import Navbar from './Navbar'
 import MobileMenu from './MobileMenu'
@@ -13,7 +14,9 @@ const Header = () => {
       }
   return (
     <header className='bg-[#163300] max-w-[1170px] mx-auto max-md:px-5 font-urbanist flex flex-wrap justify-between items-center py-6 relative'>
-      <Brand />
+      <Link to='/'>
+        <Brand />
+      </Link>
 
        {/* hamburger toggler */}
        <div className='md:hidden'>
