@@ -26,7 +26,7 @@ const TestimonialSec = () => {
 
   return (
     <div className='py-[120px] lg:pl-3 max-md:px-5 bg-[#F6F6F6]'>
-      <div className='flex gap-[20px] flex-col lg:flex-row lg:justify-between items-center justify-center' data-aos="fade-down-left" data-aos-duration="2000">
+      <div className='flex gap-[20px] flex-col lg:flex-row lg:justify-between items-center justify-center' data-aos="fade-down" data-aos-duration="2000">
         <div className='lg:w-[30%]'>
           <TestimonialText />
         </div>

@@ -1,8 +1,8 @@
 import React from 'react'
-import tracking from '../assets/images/tracking.png'
-import saleRecord from '../assets/images/sale-record.png'
-import management from '../assets/images/management.png'
-import report from '../assets/images/reports.png'
+import tracking from '../assets/images/shipment-tracking 1.png'
+import saleRecord from '../assets/images/point-of-sale 1.png'
+import management from '../assets/images/information-desk-customer 1.png'
+import report from '../assets/images/report 1.png'
 
 
 const FeaturesCard = () => {

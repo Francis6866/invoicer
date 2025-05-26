@@ -17,7 +17,7 @@ const HowItWorks = () => {
       <ItWorksText />
       <ItWorksFrame />
 
-      <div className='max-w-[1200px] mx-auto rounded-[20px]' data-aos="zoom-in-up" data-aos-duration="3000">
+      <div className='max-w-[1200px] mx-auto rounded-[20px]' data-aos="fade-up" data-aos-duration="3000">
         <img src={worksImg} className='w-full object-cover' />
       </div> 
     </div>

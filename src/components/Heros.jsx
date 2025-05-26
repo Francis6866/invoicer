@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import img1 from '../assets/images/img1.png'
+import img11 from '../assets/images/img11.png'
 import line from '../assets/images/line.png'
 import apple from '../assets/images/Apple.png'
 import playstore from '../assets/images/Playstore.png'
@@ -20,7 +21,7 @@ const Heros = () => {
     <div className='bg-[#33000011] max-md:space-y-8 md:flex md:flex-row-reverse md:items-center pt-6'>
         {/*image div */}
         <div className='lg:w-[40%]' data-aos="fade-down" data-aos-duration="1500">
-            <img src={img1}  alt="Image of a happy customer" className='object-cover w-full' />
+            <img src={img11}  alt="Image of a happy customer" className='object-cover w-full' />
         </div>
 
         {/* write up */}
